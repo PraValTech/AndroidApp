@@ -117,13 +117,27 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_myaccount) {
+            Intent intent = new Intent(MainActivity.this, AccountDashboard.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_contactus) {
 
         } else if (id == R.id.nav_login) {
+            Intent intent = new Intent(MainActivity.this, Register.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
 
+        }
+        else if(id == R.id.about_us)
+        {
+            Intent intent = new Intent(MainActivity.this, AboutUs.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.review)
+        {
+            Intent intent= new Intent(MainActivity.this, Review.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

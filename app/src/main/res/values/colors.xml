@@ -305,5 +305,7 @@
     <color name="md_white_500">#aaffffff</color>
     <color name="md_white_400">#99ffffff</color>
 
-
+    <color name="yellow">#FFC000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#DDDDDD</color>
 </resources>
