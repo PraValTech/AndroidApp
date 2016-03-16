@@ -29,6 +29,7 @@ class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CategoryViewHolde
 
     @Override
     public CategoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        //Hi, this is the change for commit in git
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_cardview_category, parent, false);
         CategoryViewHolder mCategoryViewHolder = new CategoryViewHolder(v);
         v.setOnClickListener(mOnClickListener);
