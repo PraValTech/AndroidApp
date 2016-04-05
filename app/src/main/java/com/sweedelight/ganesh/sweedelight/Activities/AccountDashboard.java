@@ -1,17 +1,21 @@
 package com.sweedelight.ganesh.sweedelight.Activities;
 
+
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.sweedelight.ganesh.sweedelight.R;
 
-public class AccountDashboard extends AppCompatActivity {
+import java.util.HashMap;
+
+public class AccountDashboard extends AppCompatActivity implements AsyncResponse{
 
     private Integer[] mImages = {
             R.drawable.account, R.drawable.password,
@@ -21,7 +25,7 @@ public class AccountDashboard extends AppCompatActivity {
             R.drawable.logout};
 
     private String[] mLabels;
-
+    SharedPreferences settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,7 @@ public class AccountDashboard extends AppCompatActivity {
 
         // get label data
         mLabels = getResources().getStringArray(R.array.account_list_labels);
+        settings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         //initialize list view
         ListView listView = (ListView) findViewById(R.id.account_dashboard_list_view);
@@ -72,11 +77,20 @@ public class AccountDashboard extends AppCompatActivity {
                             startActivity(new Intent(AccountDashboard.this,NewsletterSubscription.class));
                             break;
                     case 8: // Log Out
+                            HashMap<String,String> params = new HashMap();
+                            params.put("rt","a/account/logout");
+                            params.put("token",settings.getString("token",""));
+                            HTTPTask api_call = new HTTPTask("POST",params,AccountDashboard.this,AccountDashboard.this);
+                            api_call.execute();
                             break;
                     default: break;
                 }
             }
         });
+    }
+
+    public void processFinish(String output) {
+        Toast.makeText(this, "You have been logged out!", Toast.LENGTH_SHORT).show();
     }
 
 }
