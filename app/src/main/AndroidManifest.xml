@@ -127,7 +127,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sweedelight.ganesh.sweedelight.Activities.MainActivity" />
         </activity>
-
         <activity
             android:name=".Activities.ImageSlider"
             android:label="@string/title_activity_image_slider"
@@ -188,7 +187,68 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sweedelight.ganesh.sweedelight.Activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".Activities.IndividualItemActivity"
+            android:label="@string/title_activity_individual_item"
+            android:parentActivityName=".Activities.Sweets"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.Sweets" />
+        </activity>
+        <activity
+            android:name=".Activities.Cakes"
+            android:label="@string/title_activity_cakes"
+            android:parentActivityName=".Activities.Categories"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.Categories" />
+        </activity>
+        <activity
+            android:name=".Activities.Snacks"
+            android:label="@string/title_activity_snacks"
+            android:parentActivityName=".Activities.Categories"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.Categories" />
+        </activity>
+        <activity
+            android:name=".Activities.Finedines"
+            android:label="@string/title_activity_finedines"
+            android:parentActivityName=".Activities.Categories"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.Categories" />
+        </activity>
+        <activity
+            android:name=".Activities.Dryfruits"
+            android:label="@string/title_activity_dryfruits"
+            android:parentActivityName=".Activities.Categories"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.Categories" />
+        </activity>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
+        <activity
+            android:name=".Activities.Login"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".Activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sweedelight.ganesh.sweedelight.Activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
