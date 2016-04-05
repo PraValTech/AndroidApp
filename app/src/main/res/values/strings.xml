@@ -21,6 +21,12 @@ We guarantee on time delivery, and the best quality! </body></Html>]]></string>
     </string-array>
 
     <string name="title_activity_account">Account</string>
+
+    <string-array name="weight">
+        <item>100 gm</item>
+        <item>500 gm</item>
+        <item>750 gm</item>
+    </string-array>
     <string-array name="areas">
         <item>A Narayanpura</item>
         <item>Adugodi</item>
@@ -262,4 +268,64 @@ We guarantee on time delivery, and the best quality! </body></Html>]]></string>
     <string name="title_activity_categories">Categories</string>
     <string name="title_activity_offers">Offers</string>
     <string name="title_activity_savouries">Savouries</string>
+    <string name="title_activity_individual_item">IndividualItemActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cakes">Cakes</string>
+    <string name="title_activity_snacks">Snacks</string>
+    <string name="title_activity_finedines">Finedine</string>
+    <string name="title_activity_dryfruits">Dryfruits</string>
+
+    <string-array name="query_suggestions">
+        <item>A very very long suggestion that would span multiple lines.</item>
+        <item>Android</item>
+        <item>iOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+        <item>C#</item>
+        <item>Python</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>PHP</item>
+        <item>Go</item>
+        <item>Perl</item>
+        <item>Bash</item>
+        <item>Lua</item>
+        <item>R</item>
+        <item>TCL</item>
+        <item>Haskell</item>
+        <item>Objective C</item>
+        <item>Swift</item>
+        <item>Kotlin</item>
+        <item>jQuery</item>
+        <item>Development</item>
+        <item>Web</item>
+        <item>Ajax</item>
+        <item>Test</item>
+        <item>Testing</item>
+        <item>CookBook</item>
+        <item>Beagle</item>
+        <item>VMware</item>
+        <item>Less.js</item>
+        <item>IDE</item>
+        <item>Arduino</item>
+        <item>Xamarin</item>
+        <item>UI</item>
+        <item>Microsoft</item>
+        <item>Application</item>
+        <item>Development</item>
+        <item>JUnit</item>
+        <item>SQL</item>
+        <item>Beagle</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="forgot_login"><u>Forgot your login?</u></string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <!-- TODO: Probably look for an alternate way to represent this -->
+    <string name="cookies">AC_SF_998BBE6B48=</string>
+    <string name="title_activity_login">Login</string>
+
 </resources>

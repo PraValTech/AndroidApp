@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabMode="scrollable"
-            app:tabBackground="@color/md_orange_400"
+            app:tabBackground="@color/md_yellow_500"
             app:tabIndicatorColor="@color/md_white_1000"
             />
 
